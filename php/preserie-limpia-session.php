@@ -1,0 +1,13 @@
+<?php 
+	unset($_SESSION["modalidad"]);
+ 	unset($_SESSION["categoria"]);
+ 	unset($_SESSION["orden"]);
+ 	unset($_SESSION["salto"]);
+ 	unset($_SESSION["posicion"]);
+ 	unset($_SESSION["altura"]);
+ 	unset($_SESSION["plataforma"]);
+ 	unset($_SESSION["grado"]);
+ 	unset($_SESSION["observacion"]);
+ 	unset($_SESSION["libre"]);
+ 	unset($_SESSION["items_ser"]);
+?>

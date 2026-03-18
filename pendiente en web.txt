@@ -1,0 +1,16 @@
+10:49 AM 01/04/2016
+Cambios en BD Clavados:
+
+1. En categorias, agregar campo mixto, 1=mixto
+2. En modalidades, agregar campo mixto, 1=mixto
+3. en planillas, campo sexo: M=Masculino, F=Femenino
+4. en planillas, agregar sexo_2
+5. en planillad, agregar salto_2, posicion_2
+
+
+
+Isaac y Rommy 3mts
+Jonatan y Emely 3m y pl
+
+
+Mujeres y Mixto, 5 clavados en 3mt y PL de 5 grupos diferentes, 2 rondas de 2.0, 

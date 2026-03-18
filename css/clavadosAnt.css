@@ -1,0 +1,292 @@
+*
+{
+	border: 0;
+	margin: 0;
+}
+@font-face
+{
+	font-family: "Chalet";
+	src: url("../fonts/Chalet.eot");
+	src: url("../fonts/Chalet.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Chalet.woff") format("woff"),
+		url("../fonts/Chalet.ttf") format("truetype"),
+		url("../fonts/Chalet.svg#Chalet") format("svg")
+}
+a
+{
+	color: #F60;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #7BBFD5;
+}
+body 
+{
+	background: #FFF;
+	color: #212121;
+	font-family: "Chalet", Helvetica, Verdana;
+	font-size: 16px;
+}
+
+fieldset
+{
+	border: .1em solid #F60;
+	border-radius:  .5em;
+	padding: 1em;
+}
+
+form 
+{
+	display: none;
+}
+
+form div
+{
+	margin: .5em;
+}
+
+input[type="checkbox"], input[type="radio"], select
+
+{
+	background: #EEE;
+	cursor: pointer;
+}
+input[type="date"], input[type="email"], input[type="number"], input[type="text"]
+
+{
+	background: #EEE;
+	border-radius: .25em;
+	color: #F60;
+	font-size: 1em;
+	padding: .25em;
+}
+
+input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="text"]:focus
+{
+	background: #C6ECF9
+}
+
+input[type="email"]:disabled
+{
+	background: transparent;
+	color: #CCC;
+}
+input[type="file"]
+{
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 150px;
+}
+input[type="submit"]
+{
+	background: #FF9A55;
+	border-radius: 0 .25em;
+	color: #500;
+	font-family: "Chalet";
+	font-size: 1.5em;
+}
+
+input[type="submit"]:hover
+{
+	background: #7BBFD5;
+	border-radius: .25em 0;
+	color: #0000;
+	cursor: pointer;
+}
+
+label
+{
+	cursor: pointer;
+	font-size: 1.25em;
+}
+li ul {
+    display: none;
+}
+
+li:hover ul {
+    display: block;
+    position: absolute;
+}
+li:hover li {
+    float: none;
+    font-size: 11px;
+}
+li:hover a { background: #3b3b3b; }
+li:hover li a:hover {
+    background: #1e7c9a;
+}
+
+nav, #principal
+ {
+	-ms-box-sizing: border-box;     /* Microsoft */
+	-moz-box-sizing: border-box;	 /* Mozilla */
+	-o-box-sizing: border-box; 		/* Opera */
+	-webkit-box-sizing: border-box; /* Chrome y Safary */ 
+	box-sizing: border-box;    		/* etiqueta general */
+	display: inline-block;   /* para que se alinien los 2 */
+	font-size: 1em;   /* 1em = 16px por lo que el Body tiene 16px*/
+	margin: .25em;    /* a los 4 lados */ 
+	text-align: left; 
+	width: 20%; 	/* 100% al principal */		
+	vertical-align: top; /* para que se suba todo el contenido */
+}
+
+table
+{
+	border-collapse:collapse;
+	width:100%;
+}
+
+table, th, td
+{
+	border: 1px solid black;
+}
+
+th
+{
+	height:50px;
+	vertical-align:bottom;
+	background-color:green;
+	color:white;
+}
+
+td
+{
+	text-align:right;
+	padding:15px;
+}
+
+ul
+{
+	list-style: none;  /*suprime viñetas*/
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    padding: 5px 15px 5px 15px;
+    background: #1e7c9a;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+
+ul li a:hover {
+background: #3b3b3b;
+}
+
+#contenido
+{
+	margin: 0 auto;
+	text-align: center; 
+}
+
+#principal
+{
+	width: 75%; /* 20% lo toma el NAV y queda 5% para márgenes y rellenos*/
+}
+
+.adjuntar-archivo
+{
+	background: #EEE url(../img/boton-buscar.png) no-repeat 100% -3px;
+	border: thin solid #F60;
+	display: inline;
+	height: 290px;
+	text-align: right;
+}
+
+.adjuntar-archivo:hover
+{
+	background: #C6ECF9 url(../img/boton-buscar2.png) no-repeat 100% -3px;
+	cursor: pointer;
+}
+
+.cambio{
+	-ms-transition: all 2.5s ease-out;  /* Microsoft */
+	-moz-transition: all 2.5s ease-out; /* Mozilla */
+	-o-transition: all 2.5s ease-out; /* Opera */
+	-webkit-transition: all 2.5s ease-out; /* Chrome y safary */
+	transition: all 2.5s ease-out;  /* efecto */
+}
+.mensajes
+{
+	background: yellow;
+	border-radius: .5em;
+	color: #000;
+	font-family: Helvetica, Verdana;
+	font-size: 1em;
+	padding: .5em;
+}		
+
+/*.nav ul ul{
+	display: none;
+}
+
+.nav ul{
+	padding: 0 20px;
+	border-radius: 10px;
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	background: linear-gradient(top,#efefef 0%, #bbbbbb 100%);
+	background: -moz-linear-gradient(top,#efefef 0%, #bbbbbb 100%);
+	background: -webkit-linear-gradient(top,#efefef 0%, #bbbbbb 100%);
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+}
+
+.nav ul li{
+	float: left;
+}
+
+.nav ul li a{
+	padding: 5px 10px 5px 10px;
+	display: block;
+	color: #757575;
+}
+
+.nav ul li:hover{
+	background: #4b545f;
+	background: linear-gradient(top,#4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top,#4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top,#4f5964 0%, #5f6975 40%);
+}
+
+.nav ul li:hover a {
+	color: #fff;
+}
+
+.nav ul li:hover> ul {
+	margin: 0px;
+	padding: 0px;
+}
+.nav ul li:hover>ul{
+	float: none;
+	display: block;
+}
+.nav ul li:hover> ul li a {
+	color #666;
+	min-width: 150px;
+}
+.nav ul li:hover>ul li a:hover {
+	color: $fff;
+}
+.nav ul li{
+	position: relative;
+}
+.nav ul li ul {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+*/

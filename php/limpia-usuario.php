@@ -1,0 +1,20 @@
+<?php 
+	unset($_SESSION["cod_usuario"]);
+	unset($_SESSION["llamo"]);
+	unset($_SESSION["nombre"]);
+	unset($_SESSION["sexo"]);
+	unset($_SESSION["ano"]);
+	unset($_SESSION["mes"]);
+	unset($_SESSION["dia"]);
+	unset($_SESSION["nacimiento"]);
+	unset($_SESSION["administrador"]);
+	unset($_SESSION["clavadista"]);
+	unset($_SESSION["entrenador"]);
+	unset($_SESSION["juez"]);
+	unset($_SESSION["pais"]);
+	unset($_SESSION["email"]);	
+	unset($_SESSION["telefono"]);
+	unset($_SESSION["password"]);
+	unset($_SESSION["password_conf"]);
+	unset($_SESSION["imagen"]);
+?>

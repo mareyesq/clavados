@@ -1,0 +1,509 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "Chalet";
+	src: url("../fonts/Chalet.eot");
+	src: url("../fonts/Chalet.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Chalet.woff") format("woff"),
+		url("../fonts/Chalet.ttf") format("truetype"),
+		url("../fonts/Chalet.svg#Chalet") format("svg");
+	font-weight: normal;
+	font-style: normal;	
+	
+}
+
+a{
+	color: #FFF;
+}
+/* 16px=12pt=100%=1em es el ancho de la letra M*/
+body{
+/*	background: #212121 url(../img/fondo.jpg);*/
+	background: #00FFFF ;
+	color:#FFF;
+	font-family: "Chalet", Helvetica, Verdana;
+	font-size: 1.25em;
+	background-image:url(../img/Bankoboev.Ru_voda_basseina.jpg);	
+}
+
+div.scroll_horizontal {
+	width: 400px;
+	overflow: auto;
+	border: 1px solid #666;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+div.scroll_vertical {
+	height: 114px;
+	width: 114px;
+	overflow: auto;
+	border: 1px solid #666;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+fieldset
+{
+	border: .1em solid #F60;
+	border-radius:  .5em;
+	padding: .25em;
+}
+
+h1{
+	color: #F60;
+	margin: 0.25em auto;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0,100,100,0.5);
+}
+h2{
+	color: #F60;
+	margin: 0.25em auto;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0,100,100,0.5);
+	font-size: 1.25em;
+}
+
+h3{
+	color: #F60;
+	margin: 0.25em auto;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0,100,100,0.5);
+	font-size: .8em;
+}
+
+header, footer{
+	background: #1E6381;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 1060px;
+	padding: 0.25em;
+	text-align: center;
+}
+
+input[type="checkbox"], input[type="radio"], select
+
+{
+	background: #EEE;
+	cursor: pointer;
+}
+
+input[type="date"], input[type="email"], input[type="number"], input[type="text"], input[type="search"]
+
+{
+	background: #EEE;
+	border-radius: .25em;
+	color: #F60; 
+	text-align: center;
+/*	color: #0000;*/
+	font-size: 0.75em;
+	padding: .25em;
+}
+
+input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="text"]:focus, input[type="search"]:focus
+{
+	background: #C6ECF9
+}
+
+input[type="email"]:disabled
+{
+	background: transparent;
+	color: #CCC;
+}
+
+input[type="file"]
+{
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 150px;
+}
+input[type="submit"]
+{
+	background: #FF9A55;
+	border-radius: 0 .25em;
+	color: #500;
+	font-family: "Chalet";
+	font-size: 1em;
+}
+
+input[type="submit"]:hover
+{
+	background: #7BBFD5;
+	border-radius: .25em 0;
+	color: #0000;
+	cursor: pointer;
+}
+
+label
+{
+	cursor: pointer;
+	font-size: 1em;
+}
+
+
+li ul {
+    display: none;
+}
+
+li:hover ul {
+    display: inline-block;
+    position: absolute;
+}
+li:hover li {
+    float: none;
+    font-size: 1.25em;
+}
+li:hover a { background: #3b3b3b; }
+li:hover li a:hover {
+    background: #1e7c9a;
+}
+
+nav
+ {
+	-ms-box-sizing: border-box;     /* Microsoft */
+	-moz-box-sizing: border-box;	 /* Mozilla */
+	-o-box-sizing: border-box; 		/* Opera */
+	-webkit-box-sizing: border-box; /* Chrome y Safary */ 
+	box-sizing: border-box;    		/* etiqueta general */
+
+/*	display: inline-block;   /* para que se alinien los 2 */
+	font-size: 1.25em;   /* 1em = 16px por lo que el Body tiene 16px*/
+	margin: .25em auto;    /* a los 4 lados */ 
+	text-align: center;  
+	max-width: 1260px;
+	width: 75%; 	/* 100% al principal */		
+	vertical-align: top; /* para que se suba todo el contenido */
+
+}
+
+p 
+{
+	font-family: "Arial";
+	color: #FFFFFF;
+	margin: 0.25em auto;
+	text-align: left;
+	font-size: 0.75em;
+}
+
+ul
+{
+	list-style: none;  /*suprime viñetas*/
+    font-family: "Chalet",Arial, Verdana;
+    font-size: 0.75em;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    padding: 5px 15px 5px 15px;
+    background: #1e7c9a;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+ul li a:hover {
+	background: #3b3b3b;
+}
+article{
+	background: #011E30;
+	border-radius: 0.5em;
+	min-height: 140px;
+	padding: 0.25em;
+}
+aside{
+	width: 30%;
+}
+
+th {
+	background-color: #F7FE2E;
+	color: #000000;
+
+}
+#div1 {
+    overflow:auto;
+    /*height:300px;*/
+    height:440px;
+    width:auto;
+}
+
+#div1 table {
+    width:100%;
+    /*background-color:darkblue;*/
+    background-color: transparent; 
+    font-size: 0.7em;
+   font-family: Arial, Verdana;
+ }
+
+#div1 table tr {
+    /*background-color: #17202A; */
+    background-color: #0B0B3B; 
+ }
+
+#div2 {
+    overflow:auto;
+    height:100px;
+    width:200px;
+}
+
+#div2 table {
+    width:100%;
+    background-color:darkblue;
+    font-size: 0.9em;
+   font-family: Arial, Verdana;
+ }
+
+#div3 {
+    overflow:auto;
+    height:440px;
+    width:auto;
+}
+
+#div3 table {
+    width:100%;
+    background-color:darkblue;
+    font-size: 0.7em;
+   font-family: Arial, Verdana;
+ }
+
+#div2_1 {
+    overflow:auto;
+    height:100px;
+    width:200px;
+}
+#div2_1 table {
+    width:100%;
+    background-color:lightblue;
+    font-size: 0.9em;
+   font-family: Arial, Verdana;
+ }
+
+#buscar{
+	background: #EEE url(../img/boton-buscar.png) no-repeat 100% -3px;
+	border-radius: 0 .25em;
+	color: #500;
+    font-family: Arial, Verdana;
+    font-size: 0.75em;
+}
+
+#contenedor{
+	margin: 0.5em auto;
+	max-width: 1900px;
+	padding: 0;
+	text-align: center;
+}
+
+#contenedor1{
+	margin: 0.5em auto;
+	max-width: 1900px;
+	padding: 0;
+	text-align: center;
+}
+
+#principal{
+	background: #1E6381; 
+/*	background: #000000; */
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0.25em auto;
+	max-width: 1220px;
+	padding: 0.25em;
+	text-align: left;
+	vertical-align: top;
+	width: 100%;
+}
+
+#principal1{
+	background: #1E6381; 
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0.25em auto;
+	max-width: 1330px;
+	padding: 0.25em;
+	text-align: left;
+	vertical-align: top;
+	width: 100%;
+}
+
+.adjuntar-archivo
+{
+	background: #EEE url(../img/boton-buscar.png) no-repeat 100% -3px;
+	border: thin solid #F60;
+	display: inline;
+	height: 290px;
+	text-align: right;
+}
+
+.adjuntar-archivo:hover
+{
+	background: #C6ECF9 url(../img/boton-buscar2.png) no-repeat 100% -3px;
+	cursor: pointer;
+}
+
+.ayuda{
+	color: #F60;
+}
+
+.busqueda
+{
+	background: #EEE url(../img/boton-buscar.png) no-repeat 100% -3px;
+	border: thin solid #F60;
+	display: inline;
+	color: #500;
+	font-family: "Arial";
+	font-size: 0.5em;
+
+/*	background: #FF9A55;
+	border-radius: 0 .25em;
+
+*/
+}
+.calentamiento{
+	background: #0B0B61;
+	color: white;
+}
+.calif{
+	font-family: "Arial";
+	font-size: 1.25em;
+
+}
+.cambio{
+	-ms-transition: all 2.5s ease-out;  /* Microsoft */
+	-moz-transition: all 2.5s ease-out; /* Mozilla */
+	-o-transition: all 2.5s ease-out; /* Opera */
+	-webkit-transition: all 2.5s ease-out; /* Chrome y safary */
+	transition: all 2.5s ease-out;  /* efecto */
+}
+.consulta{
+	color: #F60;
+}
+
+.enlaces
+{
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 1em;
+/*		color:#58FA58; */
+/*		color:#000;*/
+		color:#F60;
+}
+
+.enlaces_tab
+{
+		text-decoration: none;
+		cursor: pointer;
+		background:  #58D3F7;
+		color:#000;
+}
+.error{
+	color: #CF1D1D;
+}
+.grande{
+	font-size: 13em;
+
+}
+
+.linea1{
+/*	background:  #E6E6E6;*/
+	background: #EAEDED;
+	color: #000000;
+}
+
+.medio{
+	font-size: 5em;
+}
+
+.medio3{
+	font-size: 3em;
+
+}
+
+.peque{
+	font-size: 1.2em;
+
+}
+
+.mensajes
+{
+	background: yellow;
+	border-radius: .5em;
+	color: #000;
+	font-family: Helvetica, Verdana;
+	font-size: 1em;
+	padding: .5em;
+}	
+.mensajes1
+{
+	background: yellow;
+	border-radius: .5em;
+	color: #000;
+	font-family: Helvetica, Verdana;
+	font-size: 0.6em;
+	padding: .5em;
+}		
+	
+.rotulo
+{
+		cursor: pointer;
+		font-size: 1em;
+		color:#F60;
+}
+.scrollbars {
+	overflow:scroll; 
+	height:350px;
+}
+
+.scrollbars_planilla {
+	overflow:scroll; 
+	height:220px;
+}
+.subtitulo
+{
+	color: #FFF;
+	font-size: 1.2em;
+}
+.tachado
+{
+	text-decoration:line-through;
+}
+
+
+.textwrap{
+	float: left;
+	margin: 5px;
+}
+.tablas{
+/*	color: #D8D8D8;*/
+/*    font-family: Arial, Verdana;
+    font-size: 0.8em;
+*/	color: #D8D8D8; 
+    font-family: Arial, Verdana;
+    font-size: 0.9em;
+    border-spacing: 2px;
+    border-collapse: separate;
+    text-align: center;
+
+}
+.tablas1{
+	color: #D8D8D8; 
+    font-family: Arial, Verdana;
+    font-size: 0.5em;
+    max-width: 300px;
+}
+
+.usuario
+{
+		cursor: pointer;
+		font-size: .9em;
+		color:#000000;
+}

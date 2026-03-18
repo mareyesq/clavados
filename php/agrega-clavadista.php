@@ -1,0 +1,62 @@
+<?php 
+// Asigno variables de PHP a los valores que vienen del formulario
+$email=$_POST["email_txt"];
+$nombre=$_POST["nombre_txt"];
+$sexo=$_POST["sexo_rdo"];
+$nacimiento=$_POST["nacimiento_txt"];
+$nom_pais=$_POST["pais_slc"];
+$telefono=$_POST["telefono_txt"];
+$passw=$_POST["passw_txt"];
+$passw_conf=$_POST["passw_conf_txt"];
+$nom_equipo=$_POST["equipo_slc"];
+$nom_entrenador=$_POST["entrenador_slc"];
+
+if ($passw==$passw_conf){
+
+// dependiendo del sexo asignamos una imagen predeterminada
+	$imagen_generica=($sexo=="M"?"amigo.png":"amiga.png");
+
+// Verificamos que no exista previamente el email en la BD
+	include("funciones.php");
+	$conexion=conectarse();
+	$consulta="SELECT email FROM clavadistas WHERE email='$email'";
+	$ejecutar_consulta = $conexion->query($consulta);
+	$num_regs=$ejecutar_consulta->num_rows;
+
+// si $num_regs es cero, el clavadista no existe y entonces insertamos los datos en la tabla, sino enviamos mensaje de error
+
+	if ($num_regs==0){
+
+	// ejecuto función para tomar el código del país
+		$pais=determina_pais($nom_pais,$conexion);
+
+	// ejecuto función para tomar el código del equipo
+		$equipo=determina_equipo($nom_equipo,$conexion);
+	// ejecuto función para tomar el código del Entrenador
+		$entrenador=determina_entrenador($nom_entrenador,$conexion);
+
+	// ejecuto función para subir la imagen
+		$tipo=$_FILES["foto_fls"]["type"];
+		$archivo=$_FILES["foto_fls"]["tmp_name"];
+		$se_subio_imagen=subir_imagen($tipo,$archivo,$email);
+		// Si la foto en el formulario viene vacía, entonces le asigno el valor de la imagen genérica, sino entonces el nombre de la foto que se subio (operador ternario)
+		$imagen=empty($archivo)?$imagen_generica:$se_subio_imagen;
+	// inserto el registro
+		$consulta="INSERT INTO clavadistas (nombre, sexo, nacimiento, email, pais, telefono, equipo, entrenador, password, imagen) VALUES ('$nombre', '$sexo', '$nacimiento', '$email', $pais, $telefono, $equipo, $entrenador, '$passw', '$imagen')";
+		$ejecutar_consulta=$conexion->query(utf8_encode($consulta));
+
+		if ($ejecutar_consulta)
+			$mensaje="Se ha dado de alta al clavadista con el email <b>$email</b> :)";
+		else
+			$mensaje="No se pudo dar de alta al clavadista con el email <b>$email</b> :(";
+	}
+	else
+		$mensaje="Ya está registrado el clavadista con el email <b>$email</b> :(";
+	
+	$conexion->close();
+}
+else{
+		$mensaje="La contraseña no se pudo confirmar";
+}
+header("Location: ../index.php?op=php/alta-clavadista.php&mensaje=$mensaje");
+?>

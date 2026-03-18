@@ -1,0 +1,19 @@
+
+
+http://www.000webhost.com/
+
+clavados.comxa.com 
+us: a3266813  clavados0305
+
+
+$mysql_host = "mysql9.000webhost.com";
+$mysql_database = "a3266813_clav";
+$mysql_user = "a3266813_root";
+$mysql_password = "clavados0305";
+
+
+http://www.clavados.comxa.com/clavados
+
+
+
+

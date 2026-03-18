@@ -1,0 +1,10 @@
+<?php 
+unset($_SESSION["equipo"]);
+unset($_SESSION["corto"]);
+unset($_SESSION["corto_original"]);
+unset($_SESSION["representante"]);
+unset($_SESSION["email"]);
+unset($_SESSION["telefono"]);
+unset($_SESSION["password"]);
+unset($_SESSION["password_conf"]);
+?>

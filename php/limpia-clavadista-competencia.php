@@ -1,0 +1,9 @@
+<?php 
+	unset($_SESSION["clavadista"]);
+	unset($_SESSION["clavadista2"]);
+	unset($_SESSION["cod_clavadista"]);
+	unset($_SESSION["cod_clavadista2"]);
+	unset($_SESSION["equipo"]);
+	unset($_SESSION["corto"]);
+	unset($_SESSION["clave"]);
+ ?>

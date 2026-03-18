@@ -1,0 +1,12 @@
+<?php 
+		$servidor="localhost";
+		$usuario="root";
+		$password="";
+		$bd="clavados";
+/*
+		$servidor="localhost";
+		$usuario="softneos_dives";
+		$password="clavados0305";
+		$bd="softneos_clav";
+*/
+?>
