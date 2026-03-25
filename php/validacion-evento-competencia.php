@@ -66,7 +66,7 @@ $hora="$hh:$mm:00.000";
 	else
 		$_SESSION["hora"]=$hora;
 
-	if (is_null($modalidad) and strlen($modalidad)==0) {
+	if (is_null($modalidad) OR !$modalidad) {
 		$mensaje="Error: ingresa la modalidad de la competencia";
 	}
 
@@ -78,7 +78,7 @@ $hora="$hh:$mm:00.000";
 		}
 	}
 	if (is_null($mensaje)){	
-		$nom_modalidad=$arr['nom_modalidad'];
+		$nom_modalidad=$arr['modalidad'];
 		$tipo_modalidad=$arr["individual"];
 
 		$consulta="SELECT fecha_inicia, fecha_termina FROM competencias WHERE cod_competencia=$cod_competencia";

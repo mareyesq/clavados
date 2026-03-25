@@ -226,6 +226,8 @@ $num_regs=$ejecutar_consulta->num_rows;
 			&nbsp;
 			<input type="submit" id="lista" title="lista de inscritos por equipo" class="cambio" name="clavadistas_equipo_btn" value="Inscritos por Equipo" />
 			&nbsp;
+			<input type="submit" id="competidores_evento" title="Reporte de competidores por evento" class="cambio" name="competidores_evento_btn" value="Competidores por Evento" />
+			&nbsp;
 			<input type="submit" id="exporta" title="Exporta Planillas" class="cambio" name="exporta_planillas_btn" value="Exporta Planillas" />
 			&nbsp;
 <!-- 			<input type="submit" id="calcular_horarios" title="Calcula los horarios de los eventos ;)" class="cambio" name="calcular_horarios_btn" value="Calcular Horarios " >

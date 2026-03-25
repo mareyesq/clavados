@@ -37,6 +37,10 @@ $num_regs=$ejecutar_consulta->num_rows;
 	<input type="submit" id="nuevo" class="cambio" name="inscribir_equipo_btn" value="Inscribe tu Equipo" />&nbsp;&nbsp;
 	<input type="submit" id="lista" title="lista de clavadistas" class="cambio" name="lista_clavadistas_btn" value="Lista Clavadistas" />
 		&nbsp;
+	<input type="submit" id="eventos_competidor" title="Imprime los eventos en que participa cada competidor" class="cambio" name="eventos_competidor_btn" value="Eventos por Competidor" />
+		&nbsp;
+	<input type="submit" id="competidores_prueba" title="Imprime los competidores por cada prueba" class="cambio" name="competidores_prueba_btn" value="Competidores por Prueba" />
+		&nbsp;
 	<input type="submit" id="regresar" title="Regresa a la Competencia" class="cambio" name="regresar_sbm" value="Regresar" />
 	<span>Inscritos: <?php echo "$num_regs"; ?></span>
 	</div>

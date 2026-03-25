@@ -105,6 +105,7 @@ if (is_null($mensaje)){
 	$tot_sal=count($saltos);
 	for ($i=0; $i < $n; $i++) { 
 		if ($rondas[$i]>$tot_sal){
+			$ronda=$rondas[$i];
 			$consulta="DELETE FROM planillad 
 				WHERE planilla=$cod_planilla 
 					and ronda=$ronda";
